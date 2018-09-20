@@ -1,0 +1,150 @@
+<?php
+{
+?>
+<html>
+<head>
+	<meta charset="utf-8">
+        <title> WP HAR BAY IBT </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="logopln.ico">
+	<link href="style/style.css" rel="stylesheet" type="text/css" media="screen"/>
+<script>
+function tampilkan(){
+  var nama_tragi=document.getElementById("form1").Tragi.value;
+   if (nama_tragi=="Borang")
+    {
+        document.getElementById("tampil").innerHTML="<option>--  Silahkan GI --</option><option value='Borang'>Borang</option><option value='Talang Kelapa'>Talang Kelapa</option><option value='Betung'>Betung</option><option value='Tanjung Api-Api'>Tanjung Api-Api</option><option value='Gandus'>Gandus</option><option value='Sungai Lilin'>Sungai Lilin</option>";
+    }
+  else if (nama_tragi=="BomBaru")
+    {
+        document.getElementById("tampil").innerHTML="<option>--  Silahkan GI --</option><option value='Seduduk Putih'>Seduduk Putih</option><option value='Boom Baru'>Boom Baru</option><option value='Bukit Siguntang'>Bukit Siguntang</option><option value='Talang Ratu'>Talang Ratu</option><option value='Sungai Juaro'>Sungai Juaro</option>";
+    }
+	else if (nama_tragi=="Keramasan")
+    {
+        document.getElementById("tampil").innerHTML="<option>--  Silahkan GI --</option><option value='Keramasan'>Keramasan</option><option value='Mariana'>Mariana</option><option value='Bungaran'>Bungaran</option><option value='Sungai Kedukan'>Sungai Kedukan</option><option value='Jakabaring'>Jakabaring</option>";
+    }
+	else if (nama_tragi=="Prabumulih")
+    {
+        document.getElementById("tampil").innerHTML="<option>--  Silahkan GI --</option><option value='Simpang Tiga'>Simpang Tiga</option><option value='Prabumulih'>Prabumulih</option><option value='Gunung Megang'>Gunung Megang</option>";
+    }
+}
+</script>
+</head>
+<body>
+<form method = post action = save.php id="form1" name="form1" >
+	<div id="wrapper">
+				<ul id="mainNav">
+					<li class="header">Working Permit</li>
+				</ul>
+
+				<div id="containerHolder">
+					<div id="container">
+						<h2><a href="#">Masukan Data Lengkap Anda :</a> &raquo;</a></h2>
+								<div id="main">
+
+								<h2>
+								<table>
+									<tr>
+										<td>Hari</td>
+										<td><select name="Hari" class="input">
+											<option>--  Silahkan Pilih Hari --</option>
+											<option>Senin</option>
+											<option>Selasa</option>
+											<option>Rabu</option>
+											<option>Kamis</option>
+											<option>Jumat</option>
+											<option>Sabtu</option>
+											<option>Minggu</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td>Tanggal</td>
+										<td><input type="date" name="Tanggal" class="input"></td>
+									</tr>
+									<tr>
+									<td>UPT</td>
+										<td><input type="text" name = "UPT" value="PALEMBANG" class="input" readonly></td>
+									</tr>
+									<tr>
+										<td>Tragi</td>
+										<td><select id="Tragi" name="Tragi" onchange="tampilkan()">
+	<option>--  Silahkan Tragi --</option>
+    <option value="Borang">Borang</option>
+    <option value="BomBaru">Bom Baru</option>
+	<option value="Keramasan">Keramasan</option>
+	<option value="Prabumulih">Prabumulih</option>
+  </select>
+            </td>
+<tr></tr><tr></tr>
+<tr>
+<tr></tr><tr></tr>
+<td>GI</td>
+<td>
+ <select id="tampil" name="GI">
+  </select></td>
+									</tr>
+									<tr>
+									<td>Manager</td>
+										<td><input type="text" name = " manager"  value="Lucky Ariewibowo" class="input" readonly></td>
+									</tr>
+									<tr>
+									<td>Asman Ha </td>
+										<td><input type="text" name = " ASMAN" value="Sugandhi" class="input" readonly></td>
+									</tr>
+									<tr>
+									<td>Nama Pekerjaan</td>
+										<td><input type="text" name="Nama_Pekerjaan" class="input"></td>
+									</tr>
+									<tr>
+									<td>Lokasi</td>
+										<td><input type="text" name="Lokasi" class="input"></td>
+									</tr>
+									<tr>
+									<td>Petugas</td>
+										<td><textarea name="Petugas" rows="5" cols="50" class="input"></textarea></td>
+									</tr>
+									<tr>
+									<td>Pengawas Pekerjaan</td>
+										<td><textarea name="Pengawas_Pekerjaan" rows="5" cols="50" class="input"></textarea></td>
+									</tr>
+									<tr>
+										<td>Pengawas K3</td>
+										<td><textarea name="Pengawas_K3" rows="5" cols="50" class="input"></textarea></td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td><input type="submit" name="simpan" value="Simpan" class="submit">
+										&nbsp;<input type="reset" name="batal" value="Batal" class="submit"></td>
+									</tr>
+								</h2>
+							</table>
+						<div id="hasil">
+									<?php
+									?>
+								</div>
+								</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div>
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					</div>
+					<center>
+					<p id="footer">Copyright &copy 2018 HAR UPT PLN Palembang. All Rights Reserved</p></center>
+				</div>
+		</form>
+			</body>
+			</html>
+<?php
+}
+?>
+	
+

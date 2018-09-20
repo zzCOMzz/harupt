@@ -1,0 +1,129 @@
+<html>
+<head>
+	<meta charset="utf-8">
+        <title> WP HAR BAY BATERE </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="logopln.ico">
+	<link href="style/style.css" rel="stylesheet" type="text/css" media="screen"/>
+<script>
+function tampilkan(){
+  var nama_tragi=document.getElementById("form1").kategori.value;
+  if (nama_tragi=="Borang")
+    {
+        document.getElementById("tampil").innerHTML="<option value='aaaaa'>aaaaaa</option><option value='bbbbbb'>bbbbbbb</option>";
+    }
+  else if (nama_tragi=="BomBaru")
+    {
+        document.getElementById("tampil").innerHTML="<option value='ccccc'>ccccccc</option><option value='nnnnnn'>bbbbbb</option>";
+    }
+	else if (nama_tragi=="Keramasan")
+    {
+        document.getElementById("tampil").innerHTML="<option value='tt'>tt</option><option value='cc'>cc</option>";
+    }
+	else if (nama_tragi=="Prabumulih")
+    {
+        document.getElementById("tampil").innerHTML="<option value='dd'>vv</option><option value='cc'>jj</option>";
+    }
+}
+</script>
+</head>
+<body>
+<form method = post action = save.php>
+	<div id="wrapper">
+				<ul id="mainNav">
+					<li class="header">Working Permit</li>
+				</ul>
+
+				<div id="containerHolder">
+					<div id="container">
+						<h2><a href="#">Masukan Data Lengkap Anda :</a> &raquo;</a></h2>
+								<div id="main">
+									
+								
+							<form id="form1" name="form1" onsubmit="return false">
+								<h2>
+								<table>
+									<tr>
+										<td>Hari</td>
+										<td><select name="hari" class="input">
+											<option>--  Silahkan Pilih Hari --</option>
+											<option>Senin</option>
+											<option>Selasa</option>
+											<option>Rabu</option>
+											<option>Kamis</option>
+											<option>Jumat</option>
+											<option>Sabtu</option>
+											<option>Minggu</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td>Tanggal</td>
+										<td><input type="date" name="tanggal" class="input"></td>
+									</tr>
+									<tr>
+									<td>UPT</td>
+										<td><input type="text" disabled value="PALEMBANG" class="input"></td>
+									</tr>
+									<tr>
+										<td>Tragi</td>
+										<td><select id="kategori" name="kategori" onchange="tampilkan()">
+	<option>--  Silahkan Tragi --</option>
+    <option value="Borang">Borang</option>
+    <option value="BomBaru">Bom Baru</option>
+	<option value="Keramasan">Keramasan</option>
+	<option value="Prabumulih">Prabumulih</option>
+  </select>
+            </td>
+<tr></tr><tr></tr>
+<tr>
+<tr></tr><tr></tr>
+<td>GI</td>
+<td>
+ <select id="tampil" name="tampil">
+  </select></td>
+									</tr>
+									<tr>
+									<td>Manager</td>
+										<td><input type="text" disabled value="Lucky Ariewibowo" class="input"></td>
+									</tr>
+									<tr>
+									<td>Asman Har</td>
+										<td><input type="text" disabled value="Sugandhi" class="input"></td>
+									</tr>
+									<tr>
+									<td>Nama Pekerjaan</td>
+										<td><input type="text" name="namapekerjaan" class="input"></td>
+									</tr>
+									<tr>
+									<td>Lokasi</td>
+										<td><input type="text" name="lokasi" class="input"></td>
+									</tr>
+									<tr>
+									<td>Petugas</td>
+										<td><textarea name="petugas" rows="5" cols="50" class="input"></textarea></td>
+									</tr>
+									<tr>
+									<td>Pengawas Pekerjaan</td>
+										<td><textarea name="pengawaspekerjaan" rows="5" cols="50" class="input"></textarea></td>
+									</tr>
+									<tr>
+										<td>Pengawas K3</td>
+										<td><textarea name="pengawask3" rows="5" cols="50" class="input"></textarea></td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td><input type="submit" name="simpan" value="Simpan" class="submit">
+										&nbsp;<input type="reset" name="batal" value="Batal" class="submit"></td>
+									</tr>
+								</h2>
+							</table>
+							</FORM>
+							
+					<p id="footer">&nbsp;<font color="white">&copy 2018 HAR UPT PLN Palembang. All rights reserved.</font></p>
+				</div>
+		</form>
+			</body>
+			</html>
+	
+

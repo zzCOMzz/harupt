@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+        <title> WP HAR BAY</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="logopln.ico">
+<link rel="stylesheet" href="wp/style.css">
+<script>
+function tampilkan(){
+  var nama_tragi=document.getElementById("form1").kategori.value;
+  if (nama_tragi=="Borang")
+    {
+        document.getElementById("tampil").innerHTML="<option value='aaaaa'>aaaaaa</option><option value='bbbbbb'>bbbbbbb</option>";
+    }
+  else if (nama_tragi=="BomBaru")
+    {
+        document.getElementById("tampil").innerHTML="<option value='ccccc'>ccccccc</option><option value='nnnnnn'>bbbbbb</option>";
+    }'
+	else if (nama_tragi=="Keramasan")
+    {
+        document.getElementById("tampil").innerHTML="<option value='tt'>tt</option><option value='cc'>cc</option>";
+    }
+	else if (nama_tragi=="Prabumulih")
+    {
+        document.getElementById("tampil").innerHTML="<option value='dd'>vv</option><option value='cc'>jj</option>";
+    }
+}
+</script>
+</head>
+<body>
+<form id="form1" name="form1" onsubmit="return false" method = post action = save.php>
+<CENTER>
+<h1>Working Permit Document</h1>
+<hr>
+
+  <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+  <div class="col-md-8">
+<form method=post action=4simpan.php>
+<center>
+<table width="700" align="center" border="0" bgcolor="#FFFFF0" cellpadding="2"><tr>
+<tr>
+<td>Hari</td>
+<td>
+<select name="Hari">
+                <option>--  Silahkan Pilih Hari --</option>
+                <option>Senin</option>
+                <option>Selasa</option>
+                <option>Rabu</option>
+				<option>Kamis</option>
+				<option>Jumat</option>
+				<option>Sabtu</option>
+				<option>Minggu</option>
+				 </select>
+            </td>
+<tr>
+<td>Tanggal</td>
+<td><input type="date" name="Tanggal" size=30></td>
+</tr><tr></tr>
+<tr>
+<td>UPT</td>
+<td>
+ <input type=text disabled value="PALEMBANG" name=UPT size=30></td
+</tr><tr></tr>
+<tr>
+<tr></tr><tr></tr>
+<td>TRAGI</td>
+<td>
+<select id="kategori" name="kategori" onchange="tampilkan()">
+	<option>--  Silahkan Tragi --</option>
+    <option value="Borang">Borang</option>
+    <option value="BomBaru">Bom Baru</option>
+	<option value="Keramasan">Keramasan</option>
+	<option value="Prabumulih">Prabumulih</option>
+  </select>
+            </td>
+<tr></tr><tr></tr>
+<tr>
+<tr></tr><tr></tr>
+<td>GI</td>
+<td>
+ <select id="tampil" name="tampil">
+  </select>
+            </td>
+<tr></tr><tr></tr>
+<tr>
+<td>Manager</td>
+<td><input type=text disabled value="Lucky Ariewibowo" name=manager size=30></td>
+</tr><tr></tr>
+<tr>
+<td>Asman Har</td>
+<td><input type=text disabled value="Sugandhi" name=asmanhar size=30></td>
+</tr><tr></tr>
+<tr>
+<td>Nama Pekerjaan</td>
+<td><input type=text name=namapekerjaan size=30></td>
+</tr><tr></tr>
+<tr>
+<td>Lokasi</td>
+<td><input type=text name=lokasi size=30></td>
+</tr><tr></tr>
+<tr>
+<td>Pengawas Pekerjaan</td>
+<td><textarea name="pengawaspekerjaan" cols="25"  rows="3"></textarea></td>
+</tr><tr></tr>
+<tr>
+<td>Petugas</td>
+<td><textarea name="petugas" cols="25"  rows="3"></textarea></td>
+</tr><tr></tr>
+<tr>
+<td>Pengawas K3</td>
+<td><textarea name="pengawask3" cols="25"  rows="3"></textarea></td>
+        </tr>
+<tr></tr><tr></tr>
+
+<tr>
+<div>
+<tr>
+</tr>r
+<td align=center><input type=submit name=submit value=PROSES onclick='return tanya()'></td>
+<td align=center><input type=reset name=reset value=BATAL></td></div></tr>
+</form>
+<form action=index.php method=GET>
+</form></form>
+<tr style="background-color:#708090">
+<td colspan="5" class="menu"><center>
+<div class="footer"><font color="white">&copy 2018 HAR UPT PLN Palembang. All rights reserved.</font></div></center>
+</td>
+</tr>
+</table>
+</center>
+<br><br>
+</body>
+</html>
